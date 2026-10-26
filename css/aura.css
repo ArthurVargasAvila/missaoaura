@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    background-image: url("../imagenm/fundo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#caixa_perguntas {
+    width: 100%;
+    max-width: 360px;
+    padding: 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 8px;
+}
+
+#card_resultado {
+    width: 100%;
+    max-width: 360px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.9); 
+    color: #ffffff;                       
+    border-radius: 8px;
+    text-align: center;
+}
+
+#card_resultado h2,
+#card_resultado h3 {
+    color: #8c9eff; 
+    margin-top: 0;
+}
+
+#card_resultado p strong {
+    color: #b3c5ff; 
+}
+
+#resultado_imagem {
+    width: 150px;          
+    max-width: 100%;       
+    height: auto;          
+    object-fit: contain;   
+    border-radius: 8px;   
+    display: block;      
+    margin: 15px auto;  
+    border: 3px solid #8c9eff;
+    box-shadow: 0 0 10px rgba(140, 158, 255, 0.5); 
+}
+
+fieldset {
+    border: none;
+    margin: 0 0 15px 0;
+    padding: 0;
+}
+
+legend {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.escondido {
+    display: none !important;
+}
+
+label {
+    display: block;
+    line-height: 1.6;
+    margin-top: 5px;
+}
+
+.campo {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    min-height: 42px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 20px;
+    background-color: #5a6288;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #41496d;
+}
+
+button:focus-visible,
+.campo:focus-visible {
+    outline: 2px solid #fff;
+    outline-offset: 3px;
+}
+
+input[type="radio"] {
+    cursor: pointer;
+}

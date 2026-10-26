@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Missão Aura</title>
+    <link rel="stylesheet" href="css/aura.css">
+    <script src="aura.js" defer></script>
+</head>
+<body>
+    <h1>Missão Aura</h1>
+
+    <main id="caixa_perguntas">
+        <form id="formulario">
+            <label for="name">Seu nome:</label>
+            <input type="text" id="name" name="name" class="campo" required>
+
+            <label for="lname">Seu sobrenome:</label>
+            <input type="text" id="lname" name="lname" class="campo" required>
+
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" name="idade"
+                   class="campo" min="5" max="99" step="1"
+                   placeholder="Ex: 18" required>
+
+            <fieldset>
+                <legend>Qual a cidade que você nasceu?</legend>
+                <label><input type="radio" name="cidade" value="Porto Alegre" required> Porto Alegre</label>
+                <label><input type="radio" name="cidade" value="Porto Seguro"> Porto Seguro</label>
+                <label><input type="radio" name="cidade" value="Santos"> Santos</label>
+                <label><input type="radio" name="cidade" value="Cuiabá"> Cuiabá</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Qual a sua profissão?</legend>
+                <label><input type="radio" name="profissao" value="Engenheiro de sistemas" required> Engenheiro de sistemas</label>
+                <label><input type="radio" name="profissao" value="Médico"> Médico</label>
+                <label><input type="radio" name="profissao" value="Astronauta"> Astronauta</label>
+                <label><input type="radio" name="profissao" value="Engenheiro civil"> Engenheiro civil</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Qual seu hobby favorito?</legend>
+                <label><input type="radio" name="hobby" value="Programar" required> Programar</label>
+                <label><input type="radio" name="hobby" value="Andar de bicicleta"> Andar de bicicleta</label>
+                <label><input type="radio" name="hobby" value="Pescar"> Pescar</label>
+                <label><input type="radio" name="hobby" value="Plantar"> Plantar</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Qual sua comida favorita?</legend>
+                <label><input type="radio" name="comida" value="Maçã" required> Maçã</label>
+                <label><input type="radio" name="comida" value="Kiwi"> Kiwi</label>
+                <label><input type="radio" name="comida" value="Banana"> Banana</label>
+                <label><input type="radio" name="comida" value="Uva"> Uva</label>
+            </fieldset>
+
+            <button type="submit">Descubra o seu perfil</button>
+        </form>
+    </main>
+
+    <section id="card_resultado" class="escondido">
+        <h2>Seu Perfil Encontrado:</h2>
+        <img id="resultado_imagem" src="" alt="Foto do perfil">
+        <h3 id="resultado_nome"></h3>
+        
+        <p><strong>Idade:</strong> <span id="resultado_idade"></span> anos</p>
+        <p><strong>Profissão:</strong> <span id="resultado_profissao"></span></p>
+        <p><strong>Cidade:</strong> <span id="resultado_cidade"></span></p>
+        <p><strong>Hobby:</strong> <span id="resultado_hobby"></span></p>
+        <p><strong>Comida favorita:</strong> <span id="resultado_comida"></span></p>
+        <p><strong>Pontos de combinação:</strong> <span id="resultado_pontos"></span>/4</p>
+
+        <button type="button" id="btn_refazer">Refazer Teste</button>
+    </section>
+</body>
+</html>
